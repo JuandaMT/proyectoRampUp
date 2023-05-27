@@ -1,0 +1,154 @@
+/* --------------------- GENERAL --------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #a19a92;
+}
+body {
+  font-size: 1rem;
+  transition: 0.2s;
+  border: 2px blue solid;
+}
+/* --------------------- MAIN --------------------- */
+.fondo img {
+  width: 100%;
+}
+.fondo {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+  position: relative;
+  transition: 0.2s;
+  border: yellow 2px solid;
+}
+.cita{
+  display: none;
+  position: absolute;
+  border: 2px yellow dotted;
+  top: 2%;
+  margin: 0 auto;
+  color: #b8af9e;
+  background-color: #fff;
+  
+}
+.texto {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.2s;
+  border: green 2px solid;
+}
+.menu {
+  width: 100%;
+  border: 2px dotted red;
+}
+
+.menu ul {
+  display: flex;
+  justify-content:space-around;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px solid red;
+}
+
+.enlace {
+  text-decoration: none;
+  color: #b8af9e;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+
+.juandamt {
+  margin-bottom: 50%;
+  border: 2px solid orange;
+}
+
+.enlace:hover {
+  color: #fff;
+  background-color: #b8af9e;
+}
+
+/* =============400px=========== */
+@media only screen and (min-width: 400px) {
+  .cita {
+    display: block;
+  }
+}
+
+/* =============700px=========== */
+@media only screen and (min-width: 700px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+
+/* =============770px=========== */
+@media only screen and (min-width: 770px) {
+  body {
+    width: 50%;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    margin: 10px 0px;
+    margin-left: 20px;
+    transition: 3s;
+  }
+  .cita{
+    font-size: 1.5rem;
+    transition: 3s;
+  }
+  .texto {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: end;
+    gap: 20%;
+  }
+  .juandamt{
+    margin: 0;
+    padding-left: 10%;
+    width: 60%;
+    display: flex;
+    justify-content:baseline;
+    font-size: 1.5rem;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 50px;
+    margin-right: 5%;
+    font-size: 2rem;
+  }
+  .enlace {
+    border-bottom: 0 solid #59554d;
+    border-right: 0.2em solid #59554d;
+  }
+  #juandamt{
+    border-right: 0;
+  }
+}
+
+/* =============1300px=========== */
+@media only screen and (min-width: 1300px) {
+
+}
