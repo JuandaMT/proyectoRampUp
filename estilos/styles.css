@@ -10,7 +10,7 @@ html {
 body {
   font-size: 1rem;
   transition: 0.2s;
-  border: 2px blue solid;
+  /* border: 2px blue solid; */
 }
 /* --------------------- MAIN --------------------- */
 .fondo img {
@@ -25,17 +25,16 @@ body {
   margin: 10px auto;
   position: relative;
   transition: 0.2s;
-  border: yellow 2px solid;
+  /* border: yellow 2px solid; */
 }
 .cita{
   display: none;
   position: absolute;
-  border: 2px yellow dotted;
   top: 2%;
   margin: 0 auto;
   color: #b8af9e;
   background-color: #fff;
-  
+  /* border: 2px yellow dotted; */
 }
 .texto {
   position: absolute;
@@ -48,11 +47,11 @@ body {
   justify-content: space-around;
   align-items: center;
   transition: 0.2s;
-  border: green 2px solid;
+  /* border: green 2px solid; */
 }
 .menu {
   width: 100%;
-  border: 2px dotted red;
+  /* border: 2px dotted red; */
 }
 
 .menu ul {
@@ -61,7 +60,7 @@ body {
   list-style: none;
   flex-wrap: wrap;
   gap: 20px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .enlace {
@@ -73,9 +72,14 @@ body {
 
 .juandamt {
   margin-bottom: 50%;
-  border: 2px solid orange;
+  transition: 0.2s;
 }
-
+#juandamt{
+  animation: movimiento 5s infinite;
+}
+@keyframes movimiento {
+  50% {box-shadow: 5px 5px 10px #57534F;}
+}
 .enlace:hover {
   color: #fff;
   background-color: #b8af9e;
@@ -138,6 +142,7 @@ body {
     gap: 50px;
     margin-right: 5%;
     font-size: 2rem;
+    transition: 0.2s;
   }
   .enlace {
     border-bottom: 0 solid #59554d;
@@ -148,7 +153,34 @@ body {
   }
 }
 
-/* =============1300px=========== */
-@media only screen and (min-width: 1300px) {
-
+/* =============1200px=========== */
+@media only screen and (min-width: 1200px) {
+  .menu ul {
+    font-size: 3rem;
+    transition: 0.2s;
+  }
+  .cita{
+    transform: translate(150%); 
+    width: 50%;
+    text-align: center;
+    transition: 1s;
+  }
+  .fondo img{
+    height: 100vh;
+    width: auto;
+    margin-left: 20%;
+  }
+  .juandamt{
+    position: absolute;
+    width: auto;
+    bottom: 5%;
+    right: 6%;
+    transition: 1s;
+  }
+  .container{
+    margin: 0;
+  }
+  .texto{
+    right: -90%;
+  }
 }
