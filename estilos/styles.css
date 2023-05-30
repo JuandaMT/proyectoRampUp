@@ -68,6 +68,7 @@ body {
   color: #b8af9e;
   background-color: #fff;
   padding: 5px 10px;
+  transition: 0.5s;
 }
 
 .juandamt {

@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilos/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navegador">
+        <ul>
+          <li><a href="../pages/biografia.html"><</a></li>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../pages/portfolio.html">></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="formulario">
+          <form action="">
+            <div class="nombre dato">
+              <label for="name">Introduzca su nombre</label>
+              <input
+                type="text"
+                placeholder="Nombre"
+                name="name"
+                id="name"
+                tabindex="1"
+              />
+            </div>
+            <div class="apellido dato">
+              <label for="surname">Introduzca sus apellidos</label>
+              <input
+                type="text"
+                placeholder="Apellidos"
+                name="surname"
+                id="surname"
+                tabindex="2"
+              />
+            </div>
+            <div class="email dato">
+              <label for="email">Introduzca su email</label>
+              <input
+                id="email"
+                name="email"
+                tabindex="3"
+                type="email"
+                placeholder="miemail@gmail.com"
+              />
+            </div>
+            <div class="telefono dato">
+              <label for="telefono">Escriba su número de teléfono</label>
+              <input
+                name="telefono"
+                id="telefono"
+                tabindex="4"
+                type="tel"
+                placeholder="123456789"
+              />
+            </div>
+            <div class="botones">
+              <input tabindex="14" type="submit" />
+              <input tabindex="15" type="reset" value="Limpiar" />
+            </div>
+          </form>
+          <a href="" class="logoGh">
+            <img src="../media/logos/gh.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
