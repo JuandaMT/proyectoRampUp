@@ -37,7 +37,7 @@ body {
   background-color: #fff;
   /* border: 2px yellow dotted; */
 }
-.texto {
+.enlaces {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -117,7 +117,7 @@ body {
     font-size: 1.5rem;
     transition: 3s;
   }
-  .texto {
+  .enlaces {
     position: absolute;
     top: 0;
     right: -100%;
@@ -182,7 +182,7 @@ body {
   .container{
     margin: 0;
   }
-  .texto{
+  .enlaces{
     right: -90%;
   }
 }
